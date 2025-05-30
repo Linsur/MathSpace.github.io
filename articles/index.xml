@@ -6,8 +6,15 @@
     <description>Recent content in Articles on Linsur&#39;s Math Space</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 22 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/MathSpace.github.io/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About hugo</title>
+      <link>http://localhost:1313/MathSpace.github.io/articles/about_hugo/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/MathSpace.github.io/articles/about_hugo/</guid>
+      <description>How to create a personal blog with Hugo</description>
+    </item>
     <item>
       <title>Jacobian matrix and determinant</title>
       <link>http://localhost:1313/MathSpace.github.io/articles/jacobian-matrix-and-determinant/</link>
