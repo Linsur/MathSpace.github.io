@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en"
+  dir="ltr">
+
+<head><script src="/MathSpace.github.io/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=MathSpace.github.io/livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+<link rel="icon" type="image/ico" href="http://localhost:1313/MathSpace.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/MathSpace.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/MathSpace.github.io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="http://localhost:1313/MathSpace.github.io/android-chrome-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/MathSpace.github.io/apple-touch-icon.png">
+
+<meta name="description" content="Bernoulli differential equation"/>
+
+
+
+<title>
+    
+    Bernoulli differential equation | Linsur&#39;s Math Space
+    
+</title>
+
+<link rel="canonical" href="http://localhost:1313/MathSpace.github.io/articles/bernoulli-differential-equation/"/>
+
+<meta property="og:url" content="http://localhost:1313/MathSpace.github.io/articles/bernoulli-differential-equation/">
+  <meta property="og:site_name" content="Linsur&#39;s Math Space">
+  <meta property="og:title" content="Bernoulli differential equation">
+  <meta property="og:description" content="Bernoulli differential equation">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="articles">
+    <meta property="article:published_time" content="2025-05-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-05-13T00:00:00+00:00">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/MathSpace.github.io/assets/combined.min.92c3bf7119b98cfdc79e93f36a451eb901d8bbbfed7d75814e6436cf6c9085dc.css" media="all">
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+</head>
+
+
+
+
+
+
+
+<body class="auto">
+
+  <div class="content">
+    <header>
+      
+
+<div class="header">
+
+    
+
+    <h1 class="header-title">
+        <a href="http://localhost:1313/MathSpace.github.io/">Linsur&#39;s Math Space</a>
+    </h1>
+
+    <div class="header-menu">
+        
+
+        
+        
+
+        <p
+            class="small ">
+            <a href="/" >
+                /Home
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/Articles" >
+                /Articles
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/About" >
+                /About
+            </a>
+        </p>
+        
+        
+    </div>
+
+    
+
+</div>
+
+    </header>
+
+    <main class="main">
+      
+
+
+
+
+<div class="breadcrumbs"><a href="/MathSpace.github.io/">Home</a><span class="breadcrumbs-separator">/</span><a href="/MathSpace.github.io/articles/">Articles</a><span class="breadcrumbs-separator">/</span>
+        <a href="/MathSpace.github.io/articles/bernoulli-differential-equation/">Bernoulli differential equation</a></div>
+
+
+<div  class="autonumber" >
+  <article>
+    <header class="single-intro-container">
+        
+        <h1 class="single-title">Bernoulli differential equation</h1>
+        <p class="single-summary">How to solve bernoulli differential equation</p>
+        
+        <div class="single-subsummary">
+          
+          <div>
+            
+            <p class="single-date">
+              <time datetime="2025-05-13T00:00:00&#43;00:00">May 13, 2025</time>
+              &nbsp; · &nbsp;1 min read
+            </p>
+          </div>
+        </div>
+        
+    </header>
+    
+    <div class="single-content">
+      <h1 class="heading" id="伯努利方程">
+  伯努利方程
+  <a class="anchor" href="#%e4%bc%af%e5%8a%aa%e5%88%a9%e6%96%b9%e7%a8%8b">#</a>
+</h1>
+<p>伯努利方程也是可以利用初等变换法求解的一类非线性方程。</p>
+<h3 class="heading" id="伯努利方程bernoulli-differential-equation">
+  伯努利方程（bernoulli differential equation）：
+  <a class="anchor" href="#%e4%bc%af%e5%8a%aa%e5%88%a9%e6%96%b9%e7%a8%8bbernoulli-differential-equation">#</a>
+</h3>
+<p>形如: $\dfrac{dy}{dx}+p(x,y)y=f(x)y^n$</p>
+<p>如果将两边同除以 $y^n$，方程变为</p>
+<p>$$y^{-n}\dfrac{dy}{dx}+p(x,y)y^{1-n}=f(x)$$</p>
+<p>注意到，除了相差一个常数外，第一项为 $y^{1-n}$的导数。可做变量代换 $z=y^{1-n}$，将原方程转换成一阶线性微分方程。</p>
+<h3 class="heading" id="解法">
+  解法：
+  <a class="anchor" href="#%e8%a7%a3%e6%b3%95">#</a>
+</h3>
+<p>令$z=y^{1-n}$，则 $\dfrac{dz}{dx}=(1-n)y^{-n}\dfrac{dy}{dx}$。</p>
+<p>方程两边同乘以 $1-n$，得到</p>
+<p>$$(1-n)y^{-n}\dfrac{dy}{dx}+(1-n)p(x,y)y^{1-n}=(1-n)f(x)$$</p>
+<p>将 $z=y^{1-n},\dfrac{dz}{dx}=(1-n)y^{-n}\dfrac{dy}{dx}$ 代入，得到</p>
+<p>$$\dfrac{dz}{dx}+(1-n)p(x)z=(1-n)f(x)$$</p>
+<p>这是一阶线性微分方程，可以利用之前一阶线性微分方程的解的公式求出。</p>
+<h3 class="heading" id="例解方程-displaystyle-xdfracdydxyx2y2">
+  例：解方程 $\displaystyle x\dfrac{dy}{dx}+y=x^2y^2$。
+  <a class="anchor" href="#%e4%be%8b%e8%a7%a3%e6%96%b9%e7%a8%8b-displaystyle-xdfracdydxyx2y2">#</a>
+</h3>
+<p>解：两边除以$x$，得到</p>
+<p>$$\dfrac{dy}{dx}+\dfrac{1}{x}y=xy^2$$</p>
+<p>此方程为伯努利方程，$n=2$</p>
+<p>令$v=y^{-1}$，$\dfrac{dy}{dx}=-v^2\dfrac{dv}{dx}$，代入得到</p>
+<p>$$\dfrac{dv}{dx}-\dfrac{1}{x}v=-x$$</p>
+<p>此方程为一阶线性微分方程，使用积分因子法求解</p>
+<p>积分因子为$\mu(x)=\dfrac{1}{x}$，方程两边乘以$\mu(x)$后积分得到通解</p>
+<p>$$v=-x^2+Cx$$</p>
+<p>回代$v=y^{-1}$</p>
+<p>$$y=\dfrac{1}{Cx-x^2}$$</p>
+
+    </div>
+  </article>
+
+  
+
+  
+
+  
+
+  
+
+  
+  <div class="back-to-top">
+    <a href="#top">
+      back to top
+    </a>
+  </div>
+  
+
+</div>
+
+
+    </main>
+  </div>
+
+  
+  
+
+
+
+
+
+    
+
+
+
+
+  <footer>
+    
+
+    
+    
+
+
+
+
+
+    
+
+
+
+
+    
+    
+    
+    <p>Linsur&rsquo;s Math Space</p>
+    
+
+
+  </footer>
+
+  
+  <link rel="stylesheet" 
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+  
+<script defer 
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+
+<script defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body);"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\[", right: "\\]", display: true },
+        { left: "\\(", right: "\\)", display: false }
+      ]
+    });
+  });
+</script>
+  
+</body>
+
+<script src="/MathSpace.github.io/js/theme-switch.js"></script>
+<script defer src="/MathSpace.github.io/js/copy-code.js"></script>
+</html>

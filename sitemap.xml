@@ -2,8 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://linsur.github.io/</loc>
+    <loc>http://localhost:1313/MathSpace.github.io/articles/</loc>
+    <lastmod>2025-05-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://linsur.github.io/tags/</loc>
+    <loc>http://localhost:1313/MathSpace.github.io/</loc>
+    <lastmod>2025-05-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/MathSpace.github.io/articles/jacobian-matrix-and-determinant/</loc>
+    <lastmod>2025-05-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/MathSpace.github.io/articles/bernoulli-differential-equation/</loc>
+    <lastmod>2025-05-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/MathSpace.github.io/tags/</loc>
   </url>
 </urlset>

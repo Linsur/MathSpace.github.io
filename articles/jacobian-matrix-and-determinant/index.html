@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en"
+  dir="ltr">
+
+<head><script src="/MathSpace.github.io/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=MathSpace.github.io/livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+<link rel="icon" type="image/ico" href="http://localhost:1313/MathSpace.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/MathSpace.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/MathSpace.github.io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="http://localhost:1313/MathSpace.github.io/android-chrome-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/MathSpace.github.io/apple-touch-icon.png">
+
+<meta name="description" content="Jacobian matrix and determinant"/>
+
+
+
+<title>
+    
+    Jacobian matrix and determinant | Linsur&#39;s Math Space
+    
+</title>
+
+<link rel="canonical" href="http://localhost:1313/MathSpace.github.io/articles/jacobian-matrix-and-determinant/"/>
+
+<meta property="og:url" content="http://localhost:1313/MathSpace.github.io/articles/jacobian-matrix-and-determinant/">
+  <meta property="og:site_name" content="Linsur&#39;s Math Space">
+  <meta property="og:title" content="Jacobian matrix and determinant">
+  <meta property="og:description" content="Jacobian matrix and determinant">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="articles">
+    <meta property="article:published_time" content="2025-05-22T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-05-22T00:00:00+00:00">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/MathSpace.github.io/assets/combined.min.92c3bf7119b98cfdc79e93f36a451eb901d8bbbfed7d75814e6436cf6c9085dc.css" media="all">
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+</head>
+
+
+
+
+
+
+
+<body class="auto">
+
+  <div class="content">
+    <header>
+      
+
+<div class="header">
+
+    
+
+    <h1 class="header-title">
+        <a href="http://localhost:1313/MathSpace.github.io/">Linsur&#39;s Math Space</a>
+    </h1>
+
+    <div class="header-menu">
+        
+
+        
+        
+
+        <p
+            class="small ">
+            <a href="/" >
+                /Home
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/Articles" >
+                /Articles
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/About" >
+                /About
+            </a>
+        </p>
+        
+        
+    </div>
+
+    
+
+</div>
+
+    </header>
+
+    <main class="main">
+      
+
+
+
+
+<div class="breadcrumbs"><a href="/MathSpace.github.io/">Home</a><span class="breadcrumbs-separator">/</span><a href="/MathSpace.github.io/articles/">Articles</a><span class="breadcrumbs-separator">/</span>
+        <a href="/MathSpace.github.io/articles/jacobian-matrix-and-determinant/">Jacobian matrix and determinant</a></div>
+
+
+<div  class="autonumber" >
+  <article>
+    <header class="single-intro-container">
+        
+        <h1 class="single-title">Jacobian matrix and determinant</h1>
+        <p class="single-summary">How to calculate Jacobian matrix and determinant</p>
+        
+        <div class="single-subsummary">
+          
+          <div>
+            
+            <p class="single-date">
+              <time datetime="2025-05-22T00:00:00&#43;00:00">May 22, 2025</time>
+              &nbsp; · &nbsp;2 min read
+            </p>
+          </div>
+        </div>
+        
+    </header>
+    
+    <div class="single-content">
+      <h1 class="heading" id="雅克比矩阵与行列式">
+  雅克比矩阵与行列式
+  <a class="anchor" href="#%e9%9b%85%e5%85%8b%e6%af%94%e7%9f%a9%e9%98%b5%e4%b8%8e%e8%a1%8c%e5%88%97%e5%bc%8f">#</a>
+</h1>
+<h3 class="heading" id="仿射变换">
+  仿射变换
+  <a class="anchor" href="#%e4%bb%bf%e5%b0%84%e5%8f%98%e6%8d%a2">#</a>
+</h3>
+<p><strong>仿射变换（affine transformation）定义</strong>：</p>
+<blockquote>
+<p>$$A_{n×n}=(a_ij)，b=\mathbb{I_n}\otimes b_i，(i=1,2,\cdots,n)$$</p>
+<p>则定义于几何空间$\R^n$的仿射变换具有如下形式：</p>
+<p>$$T(x)=Ax+b$$</p></blockquote>
+<p>考虑一元情况，可知仿射变换其实是$(x→y)$的变换，由一线性变换加上一平移量构成。只有当$b$为$0$时，仿射变换才是线性变换。</p>
+<p>仿射变换有一个极其重要的性质： <strong>任一直线经仿射变换的像仍是一直线，且直线上各点之间的距离比例维持不变。</strong>（共线不变性，比例不变性）。</p>
+<h3 class="heading" id="雅克比矩阵">
+  雅克比矩阵
+  <a class="anchor" href="#%e9%9b%85%e5%85%8b%e6%af%94%e7%9f%a9%e9%98%b5">#</a>
+</h3>
+<blockquote>
+<p>假设存在函数$F:\R^n\to\R^m$，对于$n$维实向量$x=(x_1,\cdots,x_n)^T$有：</p>
+<p>$$ F(x)= \left[ \begin{array}{c} f_1(x_1,\dots,x_n)\ \vdots\ f_m(x_1,\dots,x_n) \end{array} \right]$$</p>
+<p>对于单变量函数，在$x=p$附近可用直线$y=ax+b$近似向量函数。</p>
+<p>推广至多变量，可令$T:\R^n\to\R^m$为一个仿射变换：</p>
+<p>$$T(x)=Ax+b$$</p>
+<p>其中$A_{m\times n},b\in\R^m$。</p></blockquote>
+<p><strong>下面将解释如何以仿射变化$T$近似向量函数$F$，由此衍生出$F$的导数矩阵，即雅克比Jacobian 矩阵。</strong></p>
+<p>我们的目标是在$p\in D$附近使用简单的仿射变换$T(x)=Ax+b$近似表示$F(x)$，即：</p>
+<p>$$T(x)=F(x_0)+A(x−x_0)$$</p>
+<p>若想存在矩阵$A$使得仿射变换$T$在某点最优近似于向量函数$F$，自然地：当$x\to x_0$，符合近似条件的$T$应使得误差$F(x)-T(x)$更快趋近于$0$，则：</p>
+<p>$$\begin{align*}\lim_{x\to x_0}\dfrac{(F(x)-F(x_0))-A(x-x_0)}{||x-x_0||}=0 \end{align*}$$</p>
+<p>即$F:\R^n\to\R^m$在点$x_0$可导。为让$x$从任意方向逼近$x_0$，需另要求$p$是定义域$D$的一个内点。</p>
+<p><strong>下面证明若向量函数$F$在点$x_0$可导，则矩阵$A$由$x_0$唯一决定。</strong></p>
+<p>事实上，考虑$\R^n$的标准基${e_1,\dots,e_n}$，设$h$为一极小数:</p>
+<p>$$\begin{align*}\lim_{h\to0}\dfrac{F(x_0+he_j)-F(x_0)-A(he_j)}{h}=0 \end{align*}$$</p>
+<p>$j=1,\cdots,n$，由于$A(he_j)=h(Ae_j)$,则</p>
+<p>$$\begin{align*}\lim_{h\to0}\frac{F(x_0+he_j)-F(x_0)}{h}&amp;=Ae_j \end{align*}$$</p>
+<p>$$\begin{align*}\frac{\partial F}{\partial x_j} &amp;= \left( \begin{array}{c} \frac{\partial f_1}{\partial x_j}(x_0)\ \frac{\partial f_2}{\partial x_j}(x_0)\ \vdots\ \frac{\partial f_m}{\partial x_j}(x_0) \end{array} \right) \end{align*}$$</p>
+<p>等号右边等于矩阵$A$的第$j$列，故：</p>
+<p>$$A=\left[ \begin{array}{ccc} \dfrac{\partial f_1}{\partial x_1}(x_0)&amp;\dots&amp;\dfrac{\partial f_1}{\partial x_n}(x_0)\ \vdots&amp;&amp;\vdots\ \dfrac{\partial f_m}{\partial x_1}(x_0) &amp; \dots &amp; \dfrac{\partial f_m}{\partial x_n}(x_0)\ \end{array} \right]_{m\times n}$$</p>
+<p>这个矩阵即为向量函数$F$在$x_0$的<strong>Jacobian矩阵</strong>或<strong>导数矩阵(derivative matrix)</strong>，记为 $J(x_0)$。</p>
+<p>由此可知，可导函数$F$在$x_0$的最佳仿射近似为</p>
+<p>$$T(x)=F(x_0)+J(x_0)(x−x_0)$$</p>
+<p>设$h=x-x_0$，则$F(x)=F(x_0+h)$的泰勒展开式为：</p>
+<p>$$F(x_0+h)=F(x_0)+J(x_0)h+o(|h|)^2$$</p>
+<p>又因为$T(x_0)=F(x_0)$</p>
+<p>$$T(x)-T(x_0)=J（x_0)(x-x_0)$$</p>
+<p>即仿射变换$T(x)-T(x_0)$的改变量是自变量的改变量的线性函数，Jacobian矩阵$J(x_0)$即为线性变换矩阵。</p>
+<p>通俗点说，将非线性函数给予线性转换时，Jacobian矩阵就是描述该线性关系的矩阵。</p>
+<h4 class="heading" id="例极坐标与卡氏坐标的转换">
+  例：极坐标与卡氏坐标的转换
+  <a class="anchor" href="#%e4%be%8b%e6%9e%81%e5%9d%90%e6%a0%87%e4%b8%8e%e5%8d%a1%e6%b0%8f%e5%9d%90%e6%a0%87%e7%9a%84%e8%bd%ac%e6%8d%a2">#</a>
+</h4>
+<blockquote>
+<p>$$\begin{bmatrix} rcos\theta \
+rsin\theta \end{bmatrix}
+= \begin{bmatrix} X(r,\theta) \
+Y(r,\theta) \end{bmatrix}=
+\begin{bmatrix} x \
+y \end{bmatrix}$$</p>
+<p>其中$r \geqslant 0,0 \leqslant \theta \leqslant \pi/2$</p></blockquote>
+<p>Jacobian矩阵计算如下：</p>
+<p>\[J(r,\theta)= \begin{bmatrix}
+\dfrac{\partial x}{\partial r} &amp; \dfrac{\partial x}{\partial\theta} \
+\dfrac{\partial y}{\partial r} &amp; \dfrac{\partial y}{\partial\theta}
+\end{bmatrix}
+= \begin{bmatrix} \dfrac{\partial rcos\theta}{\partial r} &amp; \dfrac{\partial rcos\theta}{\partial\theta} \
+\dfrac{\partial rsin\theta}{\partial r} &amp; \dfrac{\partial rsin\theta}{\partial\theta} \end{bmatrix}
+= \begin{bmatrix} cos\theta &amp; -rsin\theta \ sin\theta &amp; rcos\theta \end{bmatrix}
+\]</p>
+<p>若$u(t)=\begin{bmatrix}r(t)\ \theta(t)\end{bmatrix}$是极坐标平面上的一条曲线，则$x(t)=\begin{bmatrix}x(t)\
+y(t)\end{bmatrix}$是卡氏坐标平面曲线。</p>
+<p>使用链式法则，$\dfrac{d(x)}{d(t)}$和$\dfrac{d(u)}{d(t)}$具有下列关系：</p>
+<p>$$\frac{\mathrm{d}\mathrm{x}}{\mathrm{d}t}= \begin{bmatrix} \dfrac{\mathrm{d}x}{\mathrm{d}t} \ \dfrac{\mathrm{d}y}{\mathrm{d}t} \end{bmatrix}= \begin{bmatrix} \dfrac{\partial x}{\partial r}\dfrac{\mathrm{d}r}{\mathrm{d}t}+\dfrac{\partial x}{\partial\theta}\dfrac{\mathrm{d}\theta}{\mathrm{d}t} \ \dfrac{\partial y}{\partial r}\dfrac{\mathrm{d}r}{\mathrm{d}t}+\dfrac{\partial y}{\partial\theta}\dfrac{\mathrm{d}\theta}{\mathrm{d}t} \end{bmatrix}= \begin{bmatrix} \dfrac{\partial x}{\partial r} &amp; \dfrac{\partial x}{\partial\theta} \ \dfrac{\partial y}{\partial r} &amp; \dfrac{\partial y}{\partial\theta} \end{bmatrix} \begin{bmatrix} \dfrac{\mathrm{d}r}{\mathrm{d}t} \ \dfrac{\mathrm{d}\theta}{\mathrm{d}t} \end{bmatrix}=J(r,\theta)d\frac{\mathrm{d}\mathrm{u}}{\mathrm{d}t}$$</p>
+<p>几何意义而言，Jacobian矩阵将极坐标平面的切向量映射至卡氏坐标平面的切向量。</p>
+<h3 class="heading" id="雅克比行列式">
+  雅克比行列式
+  <a class="anchor" href="#%e9%9b%85%e5%85%8b%e6%af%94%e8%a1%8c%e5%88%97%e5%bc%8f">#</a>
+</h3>
+<blockquote>
+<p>若存在可导函数$F:\R^n\to\R^n$，则Jacobian矩阵为$n \times n$矩阵，可计算其行列式。</p>
+<p>设$n=2$，向量函数$F$将$u=\begin{bmatrix}\mu\
+v\end{bmatrix}$映射至$x=\begin{bmatrix}x\
+y\end{bmatrix}$，则$F$的Jacobian行列式为：</p>
+<p>$$detJ(u,v)= \begin{vmatrix} \dfrac{\partial x}{\partial u} &amp; \dfrac{\partial x}{\partial v} \ \dfrac{\partial y}{\partial u} &amp; \dfrac{\partial y}{\partial v} \end{vmatrix}=\dfrac{\partial x}{\partial u}\dfrac{\partial y}{\partial v}-\dfrac{\partial x}{\partial v}\dfrac{\partial y}{\partial u}$$</p></blockquote>
+<p>定义$R$是由$\begin{matrix}du\
+0\end{matrix}$和$\begin{matrix}0\
+dv\end{matrix}$所构成的长方形，其中$du$和$dv$都是微小的量。</p>
+<p>若$du$和$dv$足够接近于$0$，则$F(R)={F(u)|u\in R}$近似于下面向量构成的平行四边形：</p>
+<p>$$\begin{aligned} J(u,\upsilon) \begin{bmatrix} du \ 0 \end{bmatrix}= \begin{bmatrix} \dfrac{\partial x}{\partial u} &amp; \dfrac{\partial x}{\partial\upsilon} \ \dfrac{\partial y}{\partial u} &amp; \dfrac{\partial y}{\partial\upsilon} \end{bmatrix} \begin{bmatrix} du \ 0 \end{bmatrix}= \begin{bmatrix} \dfrac{\partial x}{\partial u}du \ \dfrac{\partial y}{\partial u}du \end{bmatrix} \ \ J(u,\upsilon) \begin{bmatrix} 0 \ d\upsilon \end{bmatrix}= \begin{bmatrix} \dfrac{\partial x}{\partial u} &amp; \dfrac{\partial x}{\partial\upsilon} \ \dfrac{\partial y}{\partial u} &amp; \dfrac{\partial y}{\partial\upsilon} \end{bmatrix} \begin{bmatrix} 0 \ d\upsilon \end{bmatrix}= \begin{bmatrix} \dfrac{\partial x}{\partial\upsilon}d\upsilon \ \dfrac{\partial y}{\partial\upsilon}d\upsilon \end{bmatrix} \end{aligned}$$</p>
+<p>令$dA$表示平行四边形$F(R)$的面积。</p>
+<p>二阶行列式的行向量所形成的平行四边形面积等于行列式的绝对值。</p>
+<p>$$dA=\left|det \begin{bmatrix} \frac{\partial x}{\partial u}du &amp; \dfrac{\partial x}{\partial\upsilon}d\upsilon \ \dfrac{\partial y}{\partial u}du &amp; \dfrac{\partial y}{\partial\upsilon}d\upsilon \end{bmatrix}\right|=\left|det \begin{bmatrix} \dfrac{\partial x}{\partial u} &amp; \dfrac{\partial x}{\partial\upsilon} \ \dfrac{\partial y}{\partial u} &amp; \dfrac{\partial y}{\partial\upsilon} \end{bmatrix}\right|dud\upsilon=\left|detJ(u,\upsilon)\right|dud\upsilon$$</p>
+<p>故微小区域$R$经向量函数$F$映射至$F(R)$，其面积伸缩了$\left|detJ(u,\upsilon)\right|$倍。</p>
+<h4 class="heading" id="jacobian行列式用途">
+  Jacobian行列式用途
+  <a class="anchor" href="#jacobian%e8%a1%8c%e5%88%97%e5%bc%8f%e7%94%a8%e9%80%94">#</a>
+</h4>
+<blockquote>
+<p>令$f:\R^2  \in \R$为一个连续实函数，且$x=X(\mu,v),y=Y(\mu,v)$</p>
+<p>$$\iint f(x,y)dxdy=\iint f(x(u,v),y(u,v))\left|J(u,v)\right|dudv\
+|J(u,v)|=\left|\frac{\partial(x,y)}{\partial(u,v)}
+\right|$$</p>
+<p>通常可结合二重积分被积函数中含有$x^2+y^2$时将直角坐标系转化为极坐标系简化计算：</p>
+<p>$$\begin{gathered} \int_b^a\int_c^df(x,y)dxdy=\int_\alpha^\beta d\theta\int_{r_1(\theta)}^{r_2(\theta)}f(r\cos\theta,r\sin\theta)rdr  \end{gathered}$$</p></blockquote>
+
+    </div>
+  </article>
+
+  
+
+  
+
+  
+
+  
+
+  
+  <div class="back-to-top">
+    <a href="#top">
+      back to top
+    </a>
+  </div>
+  
+
+</div>
+
+
+    </main>
+  </div>
+
+  
+  
+
+
+
+
+
+    
+
+
+
+
+  <footer>
+    
+
+    
+    
+
+
+
+
+
+    
+
+
+
+
+    
+    
+    
+    <p>Linsur&rsquo;s Math Space</p>
+    
+
+
+  </footer>
+
+  
+  <link rel="stylesheet" 
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+  
+<script defer 
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+
+<script defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body);"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\[", right: "\\]", display: true },
+        { left: "\\(", right: "\\)", display: false }
+      ]
+    });
+  });
+</script>
+  
+</body>
+
+<script src="/MathSpace.github.io/js/theme-switch.js"></script>
+<script defer src="/MathSpace.github.io/js/copy-code.js"></script>
+</html>
