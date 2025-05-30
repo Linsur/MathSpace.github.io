@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en"
+  dir="ltr">
+
+<head><script src="/MathSpace.github.io/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=MathSpace.github.io/livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+<link rel="icon" type="image/ico" href="http://localhost:1313/MathSpace.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/MathSpace.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/MathSpace.github.io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="http://localhost:1313/MathSpace.github.io/android-chrome-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/MathSpace.github.io/apple-touch-icon.png">
+
+<meta name="description" content="Hugo"/>
+
+
+
+<title>
+    
+    About hugo | Linsur&#39;s Math Space
+    
+</title>
+
+<link rel="canonical" href="http://localhost:1313/MathSpace.github.io/articles/about_hugo/"/>
+
+<meta property="og:url" content="http://localhost:1313/MathSpace.github.io/articles/about_hugo/">
+  <meta property="og:site_name" content="Linsur&#39;s Math Space">
+  <meta property="og:title" content="About hugo">
+  <meta property="og:description" content="Hugo">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="articles">
+    <meta property="article:published_time" content="2025-05-30T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-05-30T00:00:00+00:00">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/MathSpace.github.io/assets/combined.min.92c3bf7119b98cfdc79e93f36a451eb901d8bbbfed7d75814e6436cf6c9085dc.css" media="all">
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+</head>
+
+
+
+
+
+
+
+<body class="auto">
+
+  <div class="content">
+    <header>
+      
+
+<div class="header">
+
+    
+
+    <h1 class="header-title">
+        <a href="http://localhost:1313/MathSpace.github.io/">Linsur&#39;s Math Space</a>
+    </h1>
+
+    <div class="header-menu">
+        
+
+        
+        
+
+        <p
+            class="small ">
+            <a href="/" >
+                /Home
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/Articles" >
+                /Articles
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/About" >
+                /About
+            </a>
+        </p>
+        
+        
+    </div>
+
+    
+
+</div>
+
+    </header>
+
+    <main class="main">
+      
+
+
+
+
+<div class="breadcrumbs"><a href="/MathSpace.github.io/">Home</a><span class="breadcrumbs-separator">/</span><a href="/MathSpace.github.io/articles/">Articles</a><span class="breadcrumbs-separator">/</span>
+        <a href="/MathSpace.github.io/articles/about_hugo/">About hugo</a></div>
+
+
+<div  class="autonumber" >
+  <article>
+    <header class="single-intro-container">
+        
+        <h1 class="single-title">About hugo</h1>
+        <p class="single-summary">How to create a personal blog with Hugo</p>
+        
+        <div class="single-subsummary">
+          
+          <div>
+            
+            <p class="single-date">
+              <time datetime="2025-05-30T00:00:00&#43;00:00">May 30, 2025</time>
+              &nbsp; · &nbsp;3 min read
+            </p>
+          </div>
+        </div>
+        
+    </header>
+    
+    <div class="single-content">
+      <h1 class="heading" id="hugo">
+  Hugo
+  <a class="anchor" href="#hugo">#</a>
+</h1>
+<p>在本文中，我将详细介绍如何使用Hugo框架搭建个人博客，网络上不乏优秀教程，但我在首次搭建的时候仍然不免陷入误区，浪费大量时间在环境配置上，希望看到本篇博客的读者能够少走些弯路。</p>
+<h3 class="heading" id="hugo环境配置">
+  Hugo环境配置
+  <a class="anchor" href="#hugo%e7%8e%af%e5%a2%83%e9%85%8d%e7%bd%ae">#</a>
+</h3>
+<ol>
+<li>
+<p>github中下载Hugo到本地</p>
+</li>
+<li>
+<p>检查Hugo是否安装成功，显示出版本即可</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>   hugo -version
+</span></span></code></pre></div><ol start="3">
+<li>系统环境配置Hugo文件夹里的bin文件</li>
+</ol>
+<h3 class="heading" id="hugo创建博客站点">
+  Hugo创建博客站点
+  <a class="anchor" href="#hugo%e5%88%9b%e5%bb%ba%e5%8d%9a%e5%ae%a2%e7%ab%99%e7%82%b9">#</a>
+</h3>
+<p>完成上述步骤后，可用在终端输入以下指令新建站点</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new site &lt;name&gt;
+</span></span></code></pre></div><p>站点名称自定义，这将会在当前位置生成站点根目录。结构如下：</p>
+<pre tabindex="0"><code>├── archetypes
+│   └── default.md
+├── hugo.toml         # 博客站点的配置文件
+├── content             # 博客文章所在目录
+├── data                
+├── layouts             # 网站布局
+├── static              # 一些静态内容
+└── themes              # 博客主题
+</code></pre><p>到此步，博客站点的创建便完成了，考虑到使用美观的Hugo主题，默认读者已经配置Git，如果没有配置的读者可以阅读其余教程完成Git配置后再接着阅读后续部分。</p>
+<p>补充较为完整的根目录文件结构，如果只想简单快速构建自己的博客则可跳过阅读此部分。</p>
+<pre tabindex="0"><code>├── content              # 存放所有内容文件
+│   ├── _index.md        # 博客首页内容
+│   ├── posts            # 博客文章
+│   │   ├── first-post.md
+│   │   └── second-post.md
+│   └── pages            # 博客页面
+│       └── about.md     # 关于页面
+├── data                 # 存放站点数据
+│   ├── authors.yml      # 作者信息
+│   └── config.toml      # 站点配置文件
+├── i18n                 # 国际化语言文件
+│   ├── en.toml          # 英文语言文件
+│   └── zh.toml          # 中文语言文件
+├── layouts              # 存放页面模板
+│   ├── _default         # 默认模板
+│   ├── partials         # 模板片段
+│   └── index.html       # 首页模板
+├── assets               # 存放编译前的资源文件
+│   ├── css              # 存放 CSS 源文件
+│   ├── js               # 存放 JavaScript 源文件
+│   └── images           # 存放图片源文件
+├── resources            # 存放生成的资源文件
+│   └── _gen             # 生成的资源文件
+├── static               # 存放静态资源（如图片、CSS、JS）
+│   ├── css              # 存放编译后的 CSS 文件
+│   ├── js               # 存放编译后的 JavaScript 文件
+│   └── images           # 存放图片文件
+├── public               # 生成的网站文件
+├── themes               # 存放主题文件
+│   └── my-theme         # 自定义主题文件
+│       ├── layouts      # 存放页面模板
+│       ├── static       # 存放主题静态资源
+│       └── theme.toml   # 主题配置文件
+├── archetypes           # 内容模板文件
+│   ├── default.md       # 默认内容模板
+│   └── post.md          # 博客文章模板
+└── hugo_build.lock         # Hugo 包管理文件
+</code></pre><h3 class="heading" id="初始化git">
+  初始化git
+  <a class="anchor" href="#%e5%88%9d%e5%a7%8b%e5%8c%96git">#</a>
+</h3>
+<p>进入博客站点目录，在当前目录中初始化一个空的Git仓库。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="font-weight:bold;font-style:italic">cd</span> quickstart
+</span></span><span style="display:flex;"><span>git init
+</span></span></code></pre></div><h3 class="heading" id="配置主题">
+  配置主题
+  <a class="anchor" href="#%e9%85%8d%e7%bd%ae%e4%b8%bb%e9%a2%98">#</a>
+</h3>
+<p>可进入官方主题仓库<code>https://themes.gohugo.io/</code>下载，若所下载主题支持子模块管理可使用下述指令直接添加为git子模块</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+</span></span></code></pre></div><p>若所下载主题不支持，可手动下载压缩包到本地解压至站点根目录中themes文件夹中，并在<code>hugo.toml</code>中添加如下配置</p>
+<pre tabindex="0"><code>theme = &#39;typo&#39;
+</code></pre><p>到这一步已经搭建好了博客框架，可在命令行启动Hugo开发服务器以查看网站</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo server
+</span></span></code></pre></div><h3 class="heading" id="博客内容创建">
+  博客内容创建
+  <a class="anchor" href="#%e5%8d%9a%e5%ae%a2%e5%86%85%e5%ae%b9%e5%88%9b%e5%bb%ba">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new content/posts/my-first-post.md
+</span></span></code></pre></div><p>Hugo 会在 <code>content/posts</code> 目录中创建该文件</p>
+<pre tabindex="0"><code>---
+title: &#34;我的第一篇文章&#34;
+date: 2022-11-20T09:03:20-08:00
+draft: true #草稿内容
+---
+</code></pre><p>可添加一些内容到所创建的md文件中</p>
+<pre tabindex="0"><code>---
+title: &#34;我的第一篇文章&#34;
+date: 2022-11-20T09:03:20-08:00
+draft: true
+---
+## 简介
+
+这是 **粗体** 文本，这是 *斜体* 文本。
+
+访问 [Hugo](https://gohugo.io) 网站！
+</code></pre><p>启动Hugo开发服务器，任选以下两个命令其中之一来包含文件草稿内容</p>
+<pre tabindex="0"><code>hugo server --buildDrafts
+hugo server -D
+</code></pre><p>到这步已经基本完成了本地博客的构建，但是读者往往希望自己的博客网站可供他人浏览，因此下述部分将讲述如何结合Github page 及 Github Action来自动化发布博客内容。</p>
+<h3 class="heading" id="配置网站">
+  配置网站
+  <a class="anchor" href="#%e9%85%8d%e7%bd%ae%e7%bd%91%e7%ab%99">#</a>
+</h3>
+<p>打开<code>hugo.toml</code></p>
+<pre tabindex="0"><code>baseURL = &#39;https://example.org/&#39;
+languageCode = &#39;en-us&#39;
+title = &#39;我的新 Hugo 网站&#39;
+theme = &#39;ananke&#39;
+</code></pre><p>修改baseURL，可设置为自身的Github page网址</p>
+<h3 class="heading" id="发布内容">
+  发布内容
+  <a class="anchor" href="#%e5%8f%91%e5%b8%83%e5%86%85%e5%ae%b9">#</a>
+</h3>
+<p>使用Github Actions实现提交源码后自动发布</p>
+<h4 class="heading" id="生成actions-secrets">
+  生成Actions secrets
+  <a class="anchor" href="#%e7%94%9f%e6%88%90actions-secrets">#</a>
+</h4>
+<ol>
+<li>
+<p>首先点击Github头像进入settings，划到最下方进入Developer Settings，点击Personal access tokens ，选择tokens （classic）</p>
+</li>
+<li>
+<p>勾选其下的repo和workflows选项，选择Generate token生成，复制保存此token（只会显示一次）</p>
+</li>
+<li>
+<p>假定已创建了Github page仓库，进入仓库Settings，选择Secrets and variable一栏，点击New repository secret，名称自取，将先前复制的token粘贴</p>
+</li>
+</ol>
+<h4 class="heading" id="配置actions文件">
+  配置actions文件
+  <a class="anchor" href="#%e9%85%8d%e7%bd%aeactions%e6%96%87%e4%bb%b6">#</a>
+</h4>
+<p>在根目录新建嵌套文件夹<code>.github/workflows</code></p>
+<p>在<code>workflows</code>文件夹中新建后缀为<code>.yml</code>的配置文件，名称自取，将以下配置写入：</p>
+<pre tabindex="0"><code>name: github pages # 名字自取
+
+on:
+  push:
+    branches:
+      - main  # 这里的意思是当 main分支发生push的时候，运行下面的jobs，这里先改为github-actions
+
+jobs:
+  deploy: # 任务名自取
+    runs-on: ubuntu-latest	# 在什么环境运行任务
+    steps:
+      - uses: actions/checkout@v2	# 引用actions/checkout这个action，与所在的github仓库同名
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive) 获取submodule主题
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo	# 步骤名自取
+        uses: peaceiris/actions-hugo@v2	# hugo官方提供的action，用于在任务环境中获取hugo
+        with:
+          hugo-version: &#39;latest&#39;	# 获取最新版本的hugo
+          # extended: true
+
+      - name: Build
+        run: hugo --minify	# 使用hugo构建静态网页
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3	# 一个自动发布github pages的action
+        with:
+          # github_token: ${{ secrets.GITHUB_TOKEN }} 该项适用于发布到源码相同repo的情况，不能用于发布到其他repo
+          external_repository: krislinzhao/krislinzhao.github.io	# 发布到哪个repo
+          personal_token: ${{ secrets.ACTION_ACCESS_TOKEN }}	# 发布到其他repo需要提供上面生成的personal access token
+          publish_dir: ./public	# 注意这里指的是要发布哪个文件夹的内容，而不是指发布到目的仓库的什么位置，因为hugo默认生成静态网页到public文件夹，所以这里发布public文件夹里的内容
+          publish_branch: main	# 发布到哪个branch
+</code></pre><p>只需修改<code>external_repository</code>为自己的Github page仓库，personal_token: ${{ secrets.XXX }} 中的XXX改成生成Actions secrets时步骤3自取的secrets名称。</p>
+<h4 class="heading" id="推送public文件夹到远程仓库">
+  推送public文件夹到远程仓库
+  <a class="anchor" href="#%e6%8e%a8%e9%80%81public%e6%96%87%e4%bb%b6%e5%a4%b9%e5%88%b0%e8%bf%9c%e7%a8%8b%e4%bb%93%e5%ba%93">#</a>
+</h4>
+<p>进入public文件夹</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="font-weight:bold;font-style:italic">cd</span> public
+</span></span></code></pre></div><p>推送代码分支报错：可任选以下两种方式解决</p>
+<ol>
+<li>初始化Git仓库，由于使用git init初始化Git仓库时默认分支名为master，为防止报错可将其修改为main再推送给远程仓库</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git init -b main
+</span></span></code></pre></div><ol start="2">
+<li>远程关联Github page仓库后修改网站呈现页面为分支master</li>
+</ol>
+<p>将其远程关联Github Pages仓库，使用仓库的ssh链接</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git remote add origin &lt;ssh&gt;
+</span></span></code></pre></div><p>推送本地文件到远程仓库</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span> git pull 
+</span></span><span style="display:flex;"><span> git add .
+</span></span><span style="display:flex;"><span> git commit -m <span style="color:#666;font-style:italic">&#34;xxx&#34;</span>
+</span></span><span style="display:flex;"><span> git push 
+</span></span></code></pre></div><p>推送完成后可在仓库Actions中查看运行时间，运行成功后可通过<code>https://xxxx.github.io</code>访问你的博客了。</p>
+
+    </div>
+  </article>
+
+  
+
+  
+
+  
+
+  
+
+  
+  <div class="back-to-top">
+    <a href="#top">
+      back to top
+    </a>
+  </div>
+  
+
+</div>
+
+
+    </main>
+  </div>
+
+  
+  
+
+
+
+
+
+    
+
+
+
+
+  <footer>
+    
+
+    
+    
+
+
+
+
+
+    
+
+
+
+
+    
+    
+    
+    <p>Linsur&rsquo;s Math Space</p>
+    
+
+
+  </footer>
+
+  
+  <link rel="stylesheet" 
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+  
+<script defer 
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+
+<script defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body);"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\[", right: "\\]", display: true },
+        { left: "\\(", right: "\\)", display: false }
+      ]
+    });
+  });
+</script>
+  
+</body>
+
+<script src="/MathSpace.github.io/js/theme-switch.js"></script>
+<script defer src="/MathSpace.github.io/js/copy-code.js"></script>
+</html>
